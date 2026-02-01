@@ -69,6 +69,90 @@
         <label><input type="radio" name="q3" value="0"> Solo persone con problemi mentali</label>
       </div>
 
+      <div class="question">
+        <p>4. La violenza economica consiste in:</p>
+        <label><input type="radio" name="q4" value="1"> Controllare o limitare l'accesso al denaro</label><br>
+        <label><input type="radio" name="q4" value="0"> Non pagare le tasse</label><br>
+        <label><input type="radio" name="q4" value="0"> Litigare per le spese</label>
+      </div>
+
+      <div class="question">
+        <p>5. La violenza può avvenire:</p>
+        <label><input type="radio" name="q5" value="0"> Solo in contesti poveri</label><br>
+        <label><input type="radio" name="q5" value="1"> In qualsiasi contesto sociale e culturale</label><br>
+        <label><input type="radio" name="q5" value="0"> Solo in età adulta</label>
+      </div>
+
+      <div class="question">
+        <p>6. Una donna che subisce violenza dovrebbe:</p>
+        <label><input type="radio" name="q6" value="1"> Chiedere aiuto a servizi e persone di fiducia</label><br>
+        <label><input type="radio" name="q6" value="0"> Tenere tutto per sé</label><br>
+        <label><input type="radio" name="q6" value="0"> Aspettare che passi</label>
+      </div>
+
+      <div class="question">
+        <p>7. Il numero antiviolenza in Italia è:</p>
+        <label><input type="radio" name="q7" value="0"> 112</label><br>
+        <label><input type="radio" name="q7" value="1"> 1522</label><br>
+        <label><input type="radio" name="q7" value="0"> 118</label>
+      </div>
+
+      <div class="question">
+        <p>8. La violenza sessuale comprende:</p>
+        <label><input type="radio" name="q8" value="1"> Qualsiasi atto sessuale imposto senza consenso</label><br>
+        <label><input type="radio" name="q8" value="0"> Solo rapporti con sconosciuti</label><br>
+        <label><input type="radio" name="q8" value="0"> Solo molestie verbali</label>
+      </div>
+
+      <div class="question">
+        <p>9. La violenza domestica può essere:</p>
+        <label><input type="radio" name="q9" value="1"> Fisica, psicologica, economica o sessuale</label><br>
+        <label><input type="radio" name="q9" value="0"> Solo fisica</label><br>
+        <label><input type="radio" name="q9" value="0"> Solo verbale</label>
+      </div>
+
+      <div class="question">
+        <p>10. Il termine stalking indica:</p>
+        <label><input type="radio" name="q10" value="1"> Pedinamento e molestie continue</label><br>
+        <label><input type="radio" name="q10" value="0"> Solo molestie telefoniche</label><br>
+        <label><input type="radio" name="q10" value="0"> Solo minacce online</label>
+      </div>
+
+      <div class="question">
+        <p>11. Quale istituzione offre supporto gratuito alle donne vittime di violenza?</p>
+        <label><input type="radio" name="q11" value="1"> Centri antiviolenza e associazioni locali</label><br>
+        <label><input type="radio" name="q11" value="0"> Solo ospedali</label><br>
+        <label><input type="radio" name="q11" value="0"> Nessuna istituzione</label>
+      </div>
+
+      <div class="question">
+        <p>12. La violenza online può includere:</p>
+        <label><input type="radio" name="q12" value="1"> Minacce, diffusione di foto senza consenso, cyberstalking</label><br>
+        <label><input type="radio" name="q12" value="0"> Solo messaggi offensivi</label><br>
+        <label><input type="radio" name="q12" value="0"> Solo pubblicità invasive</label>
+      </div>
+
+      <div class="question">
+        <p>13. La denuncia di violenza può essere fatta:</p>
+        <label><input type="radio" name="q13" value="1"> Alla polizia, ai carabinieri o online sul numero 1522</label><br>
+        <label><input type="radio" name="q13" value="0"> Solo di persona in tribunale</label><br>
+        <label><input type="radio" name="q13" value="0"> Non è possibile denunciarla</label>
+      </div>
+
+      <div class="question">
+        <p>14. Le violenze ripetute possono avere effetti su:</p>
+        <label><input type="radio" name="q14" value="1"> Salute fisica, mentale e sociale della vittima</label><br>
+        <label><input type="radio" name="q14" value="0"> Solo salute fisica</label><br>
+        <label><input type="radio" name="q14" value="0"> Solo economia della famiglia</label>
+      </div>
+
+      <div class="question">
+        <p>15. Sensibilizzare sulla violenza di genere significa:</p>
+        <label><input type="radio" name="q15" value="1"> Informare, educare e prevenire</label><br>
+        <label><input type="radio" name="q15" value="0"> Parlare solo alle vittime</label><br>
+        <label><input type="radio" name="q15" value="0"> Non fare nulla</label>
+      </div>
+
       <button type="button" onclick="calcolaRisultato()">Invia quiz</button>
     </form>
 
@@ -86,9 +170,11 @@
       });
 
       const resultDiv = document.getElementById('result');
-      resultDiv.textContent = `Hai ottenuto ${score} risposte corrette su 3.`;
+      resultDiv.textContent = `Hai ottenuto ${score} risposte corrette su 15.`;
     }
   </script>
 </body>
 </html>
+
+
 
