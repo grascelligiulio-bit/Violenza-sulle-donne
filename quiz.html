@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz sulla Violenza sulle Donne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #8b1c3d;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      background: #8b1c3d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #6f1631;
+    }
+    .result {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz sulla Violenza sulle Donne</h1>
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. Cos'è la violenza sulle donne?</p>
+        <label><input type="radio" name="q1" value="0"> Solo violenza fisica</label><br>
+        <label><input type="radio" name="q1" value="1"> Qualsiasi atto che provoca danni fisici, psicologici o sessuali</label><br>
+        <label><input type="radio" name="q1" value="0"> Solo se avviene in famiglia</label>
+      </div>
+
+      <div class="question">
+        <p>2. La violenza psicologica può includere:</p>
+        <label><input type="radio" name="q2" value="1"> Insulti, controllo e minacce</label><br>
+        <label><input type="radio" name="q2" value="0"> Solo aggressioni fisiche</label><br>
+        <label><input type="radio" name="q2" value="0"> Discussioni occasionali</label>
+      </div>
+
+      <div class="question">
+        <p>3. Chi può essere un autore di violenza?</p>
+        <label><input type="radio" name="q3" value="0"> Solo sconosciuti</label><br>
+        <label><input type="radio" name="q3" value="1"> Partner, ex partner o familiari</label><br>
+        <label><input type="radio" name="q3" value="0"> Solo persone con problemi mentali</label>
+      </div>
+
+      <button type="button" onclick="calcolaRisultato()">Invia quiz</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    function calcolaRisultato() {
+      let score = 0;
+      const form = document.getElementById('quizForm');
+      const answers = form.querySelectorAll('input[type=radio]:checked');
+
+      answers.forEach(answer => {
+        score += parseInt(answer.value);
+      });
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = `Hai ottenuto ${score} risposte corrette su 3.`;
+    }
+  </script>
+</body>
+</html>
+
